@@ -7,7 +7,7 @@ const BackgroundImage = () => {
     const res = await getCoverImage();
     console.log(res);
     setImageDetails({
-      url: res.data.urls.regular,
+      url: res.data.urls.full,
       location: res.data.location.name,
     });
   };
@@ -27,7 +27,7 @@ const BackgroundImage = () => {
         />
       </div>
       <div className="img-details">
-        <h3>{imageDetails.location || "Manali, India"}</h3>
+        <h4>{imageDetails.location || "Manali, India"}</h4>
       </div>
     </div>
   );

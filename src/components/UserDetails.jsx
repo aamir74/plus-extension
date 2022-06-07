@@ -20,7 +20,7 @@ const UserDetails = () => {
             onChange={(e) => setInput(e.target.value)}
           />
           <button
-            class="btn-text btn-primary btn-bg-color"
+            className="btn-text btn-primary btn-bg-color"
             onClick={handleUserDetails}
           >
             Get Started

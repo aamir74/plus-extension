@@ -45,6 +45,12 @@
   text-align: center;
 }
 
+.footer-container {
+  margin-top: 20rem;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
 .timer {
   font-size: 6rem;
   color: white;
@@ -70,22 +76,14 @@
 .btn-primary {
   border: grey;
   padding: 1rem 3rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: whitesmoke;
   border-radius: 7px;
   cursor: pointer;
-  background: linear-gradient(
-    10deg,
-    rgb(253, 156, 66) 0%,
-    rgb(228, 32, 84) 100%
-  );
+  background: linear-gradient(10deg, #cc2b5e 0%, #753a88 100%);
 }
 .btn-primary :hover {
-  background: linear-gradient(
-    50deg,
-    hsla(29, 98%, 57%, 1) 100%,
-    hsla(344, 97%, 56%, 1) 100%
-  );
+  background: linear-gradient(50deg, #cc2b5e 100%, #a162b6 100%);
 }
 
 .btn-text {
@@ -100,4 +98,87 @@
 .bg-color {
   background-color: rgba(63, 45, 45, 0.2);
   border-radius: 20px;
+}
+
+.small-round {
+  padding: 20px 15px;
+  font-size: 0.8rem;
+  color: whitesmoke;
+  border-radius: 50%;
+}
+
+.weather-container {
+  position: fixed;
+  right: 1%;
+  top: 1%;
+  display: flex;
+  gap: 1rem;
+}
+
+.todos-container {
+  position: fixed;
+  right: 1%;
+  bottom: 4%;
+  display: flex;
+  gap: 1rem;
+}
+
+.todo-wrapper {
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+}
+.todo-container {
+  position: absolute;
+  right: 100%;
+  bottom: 100%;
+  width: 20rem;
+  background: rgba(90, 86, 86, 0.5);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+.todo-head {
+  margin: 0.5rem;
+}
+.todo-input {
+  background-color: rgba(255, 255, 255, 0.474);
+  border: none;
+  outline: transparent;
+  color: var(--text-light);
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.list-item {
+  width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    margin-top: 18rem;
+    font-size: 1rem;
+    color: whitesmoke;
+  }
+  .timer {
+    font-size: 3rem;
+    color: white;
+  }
+  .weekday {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .user-input {
+    font-size: 2rem;
+  }
+  .btn-primary {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .footer-container {
+    margin-top: 12rem;
+    font-size: 1rem;
+    color: whitesmoke;
+  }
 }
