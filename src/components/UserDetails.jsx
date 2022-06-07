@@ -5,7 +5,7 @@ const UserDetails = () => {
   const [username, setUsername] = useState(localStorage.getItem("username"));
 
   const handleUserDetails = () => {
-    // localStorage.setItem("username", input);
+    localStorage.setItem("username", input);
     setUsername(input);
   };
   return (

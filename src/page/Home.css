@@ -150,7 +150,15 @@
   border-radius: 4px;
 }
 .list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 80%;
+  margin: 0.5rem 1rem;
+}
+
+.trash-icon {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {

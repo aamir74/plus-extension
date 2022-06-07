@@ -13,8 +13,8 @@ const BackgroundImage = () => {
   };
 
   useEffect(() => {
-    // getImage();
-    // const timer = setInterval(() => getImage(), 10000);
+    getImage();
+    const timer = setInterval(() => getImage(), 60000);
   }, []);
 
   return (
