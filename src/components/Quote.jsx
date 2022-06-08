@@ -15,7 +15,7 @@ const Quote = () => {
 
   useEffect(() => {
     getQuote();
-    const timer = setInterval(() => getQuote(), 60000);
+    setInterval(() => getQuote(), 60000);
   }, []);
   return (
     <div className="footer-container">

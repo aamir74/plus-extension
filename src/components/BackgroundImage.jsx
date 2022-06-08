@@ -14,7 +14,7 @@ const BackgroundImage = () => {
 
   useEffect(() => {
     getImage();
-    const timer = setInterval(() => getImage(), 60000);
+    setInterval(() => getImage(), 60000);
   }, []);
 
   return (
@@ -24,6 +24,7 @@ const BackgroundImage = () => {
           src={
             imageDetails.url || "https://images3.alphacoders.com/102/102609.jpg"
           }
+          alt="background"
         />
       </div>
       <div className="img-details">
