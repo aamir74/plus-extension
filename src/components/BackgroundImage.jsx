@@ -6,10 +6,12 @@ const BackgroundImage = () => {
   const getImage = async () => {
     const res = await getCoverImage();
     console.log(res);
-    setImageDetails({
-      url: res.data.urls.full,
-      location: res.data.location.name,
-    });
+    if (res?.data) {
+      setImageDetails({
+        url: res.data.urls.full,
+        location: res.data.location.name,
+      });
+    }
   };
 
   useEffect(() => {
