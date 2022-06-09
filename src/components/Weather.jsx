@@ -18,7 +18,7 @@ const Weather = () => {
     <>
       {weather && (
         <div className="weather-container">
-          <img src={weather.icon} />
+          {weather.icon && <img src={weather.icon} alt="weather-icon" />}
           <div>
             <h2>{weather.temp}</h2>
             <small>{weather.city}</small>

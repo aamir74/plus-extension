@@ -6,7 +6,7 @@ const Quote = () => {
   const getQuote = async () => {
     try {
       const quote = await getRandomQuote();
-      setQuote(quote);
+      if (quote) setQuote(quote);
       console.log({ quote });
     } catch (err) {
       console.log(err);
